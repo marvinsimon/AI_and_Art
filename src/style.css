@@ -1,0 +1,83 @@
+@import "./style/fonts.css";
+@import "./style/slider.css";
+
+body {
+    margin: 0;
+    font-family: "NeufileGrotesk-Regular";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000000;
+    height: 100vh;
+    background-image: url(./assets/svg/1920x1080-hg.png);
+}
+
+.topic {
+    position: absolute;
+    font-size: 48px;
+    left: 24px;
+    top: 24px;
+    color: white;
+}
+
+.topic > span {
+   font-family: "Olten-Italic";
+}
+
+.presentation {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actions {
+    display: flex;
+    margin-top: 64px;
+}
+
+.actions > button:not(:last-of-type) {
+    margin-right: 16px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    
+}
+
+.indicator:not(:last-of-type) {
+    margin-right: 8px;
+}
+
+.indicatorContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 64px;
+}
+
+.indicator.active {
+    background-color: #000000;
+}
+
+.hidden {
+    display: none;
+}
+
+.pill {
+    width: 20%;
+    height: 50%;
+    border-radius: 50px;
+    background-image: url(./assets/svg/raster_muster.svg);
+    background-size: cover;
+    position: absolute;
+}

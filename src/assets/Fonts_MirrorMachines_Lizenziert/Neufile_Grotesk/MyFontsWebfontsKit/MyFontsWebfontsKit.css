@@ -1,0 +1,35 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4290862, 2022-01-09T15:23:15-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: NeufileGrotesk-Regular by Letter Omega Typefoundry
+ * URL: https://www.myfonts.com/fonts/letter-omega/neufile-grotesk/regular/
+ * 
+ * Webfont: NeufileGrotesk-SemiBold by Letter Omega Typefoundry
+ * URL: https://www.myfonts.com/fonts/letter-omega/neufile-grotesk/semi-bold/
+ * 
+ * 
+ * Webfonts copyright: Copyright � 2017 by Doni Sukma. All rights reserved.
+ * 
+ * © 2022 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/41792e");
+  
+@font-face {
+  font-family: "NeufileGrotesk-SemiBold";
+  src: url('webFonts/NeufileGroteskSemiBold/font.woff2') format('woff2'), url('webFonts/NeufileGroteskSemiBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NeufileGrotesk-Regular";
+  src: url('webFonts/NeufileGroteskRegular/font.woff2') format('woff2'), url('webFonts/NeufileGroteskRegular/font.woff') format('woff');
+}
+

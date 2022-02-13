@@ -1,0 +1,7 @@
+@import "../assets/Fonts_MirrorMachines_Lizenziert/Neufile_Grotesk/MyFontsWebfontsKit/MyFontsWebfontsKit.css";
+
+
+@font-face {
+    font-family: "Olten-Italic";
+    src: url('../assets/Fonts_MirrorMachines_Lizenziert/Olten_Italic/Olten-Italic.woff') format('woff');
+  }

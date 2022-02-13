@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="https://unpkg.com/blobs/v2"></script>
+    <script src="./src/app/presentation.js"></script>
+    <title>AI and Art</title>
+</head>
+<body>
+    <div class="topic">
+        mirr<span>o</span>r
+        <br>
+        m<span>a</span>chin<span>e</span>s
+    </div>
+    <div class="presentation">
+        <div id="indicatorContainer" class="indicatorContainer">
+            <div id="page_1" class="indicator active"></div>
+            <div id="page_2" class="indicator"></div>
+            <div id="page_3" class="indicator"></div>
+            <div id="page_4" class="indicator"></div>
+            <div id="page_5" class="indicator"></div>
+            <div id="page_6" class="indicator"></div>
+        </div>
+        <div id="question_1" class="slide hidden">
+            Würdest du den Entscheidungen einer KI vertrauen?
+            <input id="slider_1" class="slider" type="range" min="0" max="299"></input>
+        </div>
+        <div id="question_2" class="slide hidden">
+            Hat KI einen eigenen Willen?
+            <input id="slider_2" class="slider" type="range" min="0" max="299"></input>
+        </div>
+        <div id="question_3" class="slide hidden">
+            Kann man Ethik programmieren?
+            <input id="slider_3" class="slider" type="range" min="0" max="9"></input>
+        </div>
+        <div id="question_4" class="slide hidden">
+            Sind wir Menschen frei?
+            <input id="slider_4" class="slider" type="range" min="0" max="299"></input>
+        </div>
+        <div id="question_5" class="slide hidden">
+            Empfindet KI Freude?
+            <input id="slider_5" class="slider" type="range" min="0" max="299"></input>
+        </div>
+        <div id="question_6" class="slide hidden">
+            Kann KI lügen?
+            <input id="slider_6" class="slider" type="range" min="0" max="299"></input>
+        </div>
+        <div id="result" class="slide hidden">
+            <div class="pill"></div>
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="actions">
+            <button id="back">Zurück</button>
+            <button id="next">Next</button> 
+            <button id="finish">Abschließen</button>
+            <button id="reset">Zurücksetzen</button>
+        </div>
+    </div>
+    
+</body>
+</html>
