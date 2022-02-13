@@ -1,5 +1,6 @@
 @import "./style/fonts.css";
 @import "./style/slider.css";
+@import "./style/button.css";
 
 body {
     margin: 0;
@@ -36,11 +37,15 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-size: 42px;
 }
 
 .actions {
     display: flex;
     margin-top: 64px;
+    height: 32px;
+    width: 32px;
+    justify-content: center;
 }
 
 .actions > button:not(:last-of-type) {
@@ -50,7 +55,7 @@ body {
 .indicator {
     width: 10px;
     height: 10px;
-    border: 1px solid #000000;
+    border: 1px solid white;
     border-radius: 50%;
     
 }
@@ -66,7 +71,7 @@ body {
 }
 
 .indicator.active {
-    background-color: #000000;
+    background-color: white;
 }
 
 .hidden {
@@ -74,10 +79,15 @@ body {
 }
 
 .pill {
-    width: 20%;
+    width: 15%;
     height: 50%;
     border-radius: 50px;
-    background-image: url(./assets/svg/raster_muster.svg);
-    background-size: cover;
     position: absolute;
+}
+
+.pill > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 200px;
 }

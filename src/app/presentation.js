@@ -84,16 +84,16 @@ function deactivateAllButtons() {
 
 function resetSliders() {
     document.querySelectorAll(".slider").forEach(element => {
-        element.setAttribute("value", "0");
+        element.valueAsNumber = 0;
     });
 }
 
 function setUItoStart() {
+    resetSliders();
     hideSlides();
     deactivateAllButtons();
     resetIndicator();
     displayText(1, 0);
-    resetSliders();
 
     document.getElementById("indicatorContainer").classList.remove("hidden");
 
@@ -147,6 +147,9 @@ const draw = () => {
     const color = colors[currentColor];
     const lightColor = getHSL(color, colorOffset);
     const darkColor = getHSL(color, colorOffset * -1);
+
+    const pill = document.getElementById("pill");
+    pill.style.filter = `hue-rotate(${color.h}deg) saturate(${color.s}%) brightness(${color.l}%)`;
 
     const gradient = ctx?.createLinearGradient(0, 1000, 1000, 1000);
     gradient?.addColorStop(0, darkColor);

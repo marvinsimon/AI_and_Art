@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="topic">
-        mirr<span>o</span>r
+        mirr<span>o</span>r<span>/</span>
         <br>
         m<span>a</span>chin<span>e</span>s
     </div>
@@ -34,7 +34,7 @@
         </div>
         <div id="question_3" class="slide hidden">
             Kann man Ethik programmieren?
-            <input id="slider_3" class="slider" type="range" min="0" max="9"></input>
+            <input id="slider_3" class="slider" type="range" min="0" max="299"></input>
         </div>
         <div id="question_4" class="slide hidden">
             Sind wir Menschen frei?
@@ -48,16 +48,17 @@
             Kann KI lügen?
             <input id="slider_6" class="slider" type="range" min="0" max="299"></input>
         </div>
+        <div class="actions">
+            <button id="back" class="btn second">Zurück</button>
+            <button id="next" class="btn second">Next</button> 
+            <button id="finish" class="btn second">Abschließen</button>
+            <button id="reset" class="btn second">Zurücksetzen</button>
+        </div>
         <div id="result" class="slide hidden">
-            <div class="pill"></div>
+            <div class="pill" id="pill"><img src="./src/assets/svg/raster_muster.svg" alt="Raster_Muster" /></div>
             <canvas id="canvas"></canvas>
         </div>
-        <div class="actions">
-            <button id="back">Zurück</button>
-            <button id="next">Next</button> 
-            <button id="finish">Abschließen</button>
-            <button id="reset">Zurücksetzen</button>
-        </div>
+        
     </div>
     
 </body>
