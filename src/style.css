@@ -43,7 +43,7 @@ body {
 .actions {
     display: flex;
     margin-top: 64px;
-    height: 32px;
+    height: 48px;
     width: 32px;
     justify-content: center;
 }
