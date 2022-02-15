@@ -84,7 +84,7 @@ function deactivateAllButtons() {
 
 function resetSliders() {
     document.querySelectorAll(".slider").forEach(element => {
-        element.valueAsNumber = 0;
+        element.valueAsNumber = 150;
     });
 }
 
