@@ -137,6 +137,10 @@ const draw = () => {
 
     const secondBlobSeed = document.querySelector('#slider_5').valueAsNumber + 1;
 
+    const widthPill = (document.querySelector('#slider_6').valueAsNumber % 15) + 5;
+
+    document.getElementById("pill").style.width = `${widthPill}%`;
+
     const canvas = document.querySelector('#canvas');
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight - 100;
