@@ -100,6 +100,7 @@ function setUItoStart() {
     document.getElementById("back").setAttribute("disabled", "true");
     document.getElementById("back").style.display = "inline";
     document.getElementById("next").style.display = "inline";
+    document.body.style.backgroundImage = "url('src/assets/svg/1920x1080-hg.png')";
 }
 
 function setUItoCanvas() {
@@ -113,6 +114,9 @@ function setUItoCanvas() {
     document.getElementById("indicatorContainer").classList.add("hidden");
     //Show the canvas
     document.getElementById("result").classList.remove("hidden");
+
+    document.body.style.background = "white"
+
     draw();
 }
 

@@ -9,7 +9,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     color: #000000;
     height: 100vh;
-    background-image: url(./assets/svg/1920x1080-hg.png);
 }
 
 .topic {
