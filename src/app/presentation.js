@@ -44,12 +44,26 @@ window.addEventListener("load", () => {
 
     document.getElementById("reset").addEventListener("click", () => {
         presentationPage = 1;
-        setUItoStart();
+        setUItoIntro();
     });
 
-    setUItoStart();
+    document.getElementById("intro").addEventListener("click", () => {
+        setUItoStart();
+    })
+
+    setUItoIntro();
 })
 
+
+function setUItoIntro() {
+    deactivateAllButtons();
+    hideSlides();
+
+    document.getElementById("intro").style.display = "inline";
+    document.getElementById("introduction").classList.remove("hidden");   
+    document.getElementById("indicatorContainer").classList.add("hidden");
+    document.body.style.backgroundImage = "url('src/assets/svg/1920x1080-hg.png')";
+}
 
 function displayText(presentationPage, previousPage) {
     document.getElementById(`question_${presentationPage}`).classList.remove("hidden");
@@ -80,6 +94,7 @@ function deactivateAllButtons() {
     document.getElementById("finish").style.display = "none";
     document.getElementById("back").style.display = "none";
     document.getElementById("next").style.display = "none";
+    document.getElementById("intro").style.display = "none";
 }
 
 function resetSliders() {
@@ -100,7 +115,7 @@ function setUItoStart() {
     document.getElementById("back").setAttribute("disabled", "true");
     document.getElementById("back").style.display = "inline";
     document.getElementById("next").style.display = "inline";
-    document.body.style.backgroundImage = "url('src/assets/svg/1920x1080-hg.png')";
+    document.getElementById("info").style.display = "inline";
 }
 
 function setUItoCanvas() {

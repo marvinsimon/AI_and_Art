@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de_DE">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +23,12 @@
             <div id="page_4" class="indicator"></div>
             <div id="page_5" class="indicator"></div>
             <div id="page_6" class="indicator"></div>
+        </div>
+        <div id="introduction" class="slide hidden text">
+            Dies ist ein persönlicher Bildgenerator.
+            Anhand Deiner Haltung und Einstellung zu Fragen der KI generiert eine
+            Künstliche Intelligenz ein individuelles Ausstellungsplakat.
+            Beantworte einfach 5 Fragen und dann geht es los …
         </div>
         <div id="question_1" class="slide hidden">
             Würdest du den Entscheidungen einer KI vertrauen?
@@ -49,13 +55,14 @@
             <input id="slider_6" class="slider" type="range" min="0" max="299"></input>
         </div>
         <div class="actions">
+            <button id="intro" class="button_slide slide_left">Los gehts</button>
             <button id="back" class="button_slide slide_left">Zurück</button>
             <button id="next" class="button_slide slide_left">Weiter</button> 
             <button id="finish" class="button_slide slide_left">Abschließen</button>
             <button id="reset" class="button_slide slide_left">Zurücksetzen</button>
         </div>
         <div id="result" class="slide hidden">
-            <div class="pill" id="pill"><img src="./src/assets/svg/raster_muster.svg" alt="Raster_Muster" /></div>
+            <div class="pill" id="pill"><img src="./src/assets/svg/raster_muster.svg" alt="Raster_Muster"/></div>
             <canvas id="canvas"></canvas>
         </div>
         
