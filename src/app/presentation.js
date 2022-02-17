@@ -16,7 +16,7 @@ const paths = [
 ]
 
 window.addEventListener("load", () => {
-    let presentationPage = 1;
+    let presentationPage = 0;
     document.getElementById("next").addEventListener("click", () => {
         presentationPage++;
         if (presentationPage === 6) {
@@ -27,13 +27,10 @@ window.addEventListener("load", () => {
         document.getElementById("back").removeAttribute("disabled");
     });
     document.getElementById("back").addEventListener("click", () => {
-        presentationPage--;
-        if (presentationPage === 1) {
-            document.getElementById("back").setAttribute("disabled", "true");
-        }
-        displayText(presentationPage, presentationPage + 1);
         document.getElementById("finish").style.display = "none";
         document.getElementById("next").style.display = "inline";
+        presentationPage--;
+        displayText(presentationPage, presentationPage + 1);
     });
 
     document.getElementById("finish").addEventListener("click", () => {
@@ -43,11 +40,12 @@ window.addEventListener("load", () => {
     });
 
     document.getElementById("reset").addEventListener("click", () => {
-        presentationPage = 1;
+        presentationPage = 0;
         setUItoIntro();
     });
 
     document.getElementById("intro").addEventListener("click", () => {
+        presentationPage = 1;
         setUItoStart();
     })
 
@@ -66,6 +64,10 @@ function setUItoIntro() {
 }
 
 function displayText(presentationPage, previousPage) {
+    if(presentationPage === 0) {
+        setUItoIntro();
+        return;
+    }
     document.getElementById(`question_${presentationPage}`).classList.remove("hidden");
     document.getElementById(`page_${presentationPage}`).classList.add("active");
     if (previousPage != 0) {
@@ -112,10 +114,8 @@ function setUItoStart() {
 
     document.getElementById("indicatorContainer").classList.remove("hidden");
 
-    document.getElementById("back").setAttribute("disabled", "true");
     document.getElementById("back").style.display = "inline";
     document.getElementById("next").style.display = "inline";
-    document.getElementById("info").style.display = "inline";
 }
 
 function setUItoCanvas() {

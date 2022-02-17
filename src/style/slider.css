@@ -17,8 +17,9 @@
     /* 0.2 seconds transition on hover */
     transition: opacity .2s;
     
-    margin-top: 64px;
-
+    
+    margin-left: 12px;
+    margin-right: 12px;
     border-radius: 15px;
 }
 
